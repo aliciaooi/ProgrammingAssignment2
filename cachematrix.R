@@ -20,17 +20,8 @@ makeMatrix <- function(x = matrix()) {
              setmatrix = setmatrix,
              getmatrix = getmatrix)
 }
-# Find out if square matrix
-#isSymmetric(object, ...)
 
-# If yes then use Solve
-#if true
-#solve(x)
 
-# If not squared matrix 
-
-#elseif false
-#solve(crossprod(x))
 
 ## Function cacheSolve looks to see if inverse of cached matrix has been calculated and returns it from cache
 ## If not found, it calculates the inverse of matric and stores in the cache via the setmatrix function.
