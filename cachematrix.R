@@ -5,17 +5,29 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
+        m <- NULL
+        set <- function(y) {
+                x <<- y
+                m <<- NULL
+        }
+        get <- function() x
+        setmatrix<- function(solve) m <<- solve
+        getmatrix <- function() m
+        list(set = set, get = get,
+             setmatrix = setmatrix,
+             getmatrix = getmatrix)
+}
 # Find out if square matrix
-isSymmetric(object, ...)
+#isSymmetric(object, ...)
 
 # If yes then use Solve
-if true
-solve(x)
+#if true
+#solve(x)
 
 # If not squared matrix 
 
-elseif false
-solve(crossprod(x))
+#elseif false
+#solve(crossprod(x))
 
 }
 ##test test test AO again
@@ -25,4 +37,16 @@ solve(crossprod(x))
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+       
+        m <- x$getmatrix()
+        if(!is.null(m)) {
+                message("getting cached data")
+                return(m)
+        }
+        data <- x$get()
+        m <- matrix(data, ...)
+        x$setmatrix(m)
+        m
 }
+        
+        
