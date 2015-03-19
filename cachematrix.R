@@ -1,10 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCacheMatrix function 
 
 makeCacheMatrix <- function(x = matrix()) {
-
         m <- NULL
         set <- function(y) {
                 x <<- y
@@ -29,11 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 #elseif false
 #solve(crossprod(x))
 
-}
-##test test test AO again
-# test test test 2142
-
-## Write a short comment describing this function
+## Function cacheSolve looks to see if inverse of cached matrix has been calculated and returns it from cache
+## If not found, it calculates the inverse of matric and stores in the cache via the setmatrix function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -44,7 +40,7 @@ cacheSolve <- function(x, ...) {
                 return(m)
         }
         data <- x$get()
-        m <- matrix(data, ...)
+        m <- solve(data, ...)
         x$setmatrix(m)
         m
 }
