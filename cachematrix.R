@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix()) {
 isSymmetric(object, ...)
 
 # If yes then use Solve
-if 
+if true
 solve(x)
 
 # If not squared matrix 
