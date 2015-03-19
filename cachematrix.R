@@ -5,6 +5,18 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
+# Find out if square matrix
+isSymmetric(object, ...)
+
+# If yes then use Solve
+if 
+solve(x)
+
+# If not squared matrix 
+
+elseif false
+solve(crossprod(x))
+
 }
 ##test test test AO again
 # test test test 2142
