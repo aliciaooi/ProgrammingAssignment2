@@ -1,9 +1,13 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## makeCacheMatrix function 
+## makeMatrix function makes special matrix as a list containing function to
+## 1. set value of matrix
+## 2. get value of matrix
+## 3. set inverse value of matrix
+## 4. get inverse value of matrix
 
-makeCacheMatrix <- function(x = matrix()) {
+makeMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
                 x <<- y
