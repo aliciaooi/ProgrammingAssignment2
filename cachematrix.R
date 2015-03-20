@@ -1,8 +1,8 @@
-##Two functions makeCacheMatrix to creates a special "matrix" object that can cache its inverse and cacheSolve
-## which tries to retrieve inverse value from cache and sets the cache if it is not found
+##This file contains two functions to creates a special "matrix" object that can cache its inverse and another function
+## which tries to retrieve inverse value from cache otherise would calculate inverse and store the cache if it is not found
 
 ## First function
-## The makeMatrix function makes special matrix as a list containing function to
+## The makeCacheMatrix function makes special matrix as a list containing function to
 ## 1. set value of matrix
 ## 2. get value of matrix
 ## 3. set inverse value of matrix
